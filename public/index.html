@@ -5,9 +5,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-    <h1>My website</h1>
-    <script src="index.js"></script>
+    <div id="main-container">
+        <div id="instruction-container">
+            <h1 id="instruction">Use the keyboard to play the drum or click the buttons with your mouse!</h1>
+        </div>
+        <div id="hero">
+            <img src="./images/cute-cat-playing-drums.gif" alt="">
+        </div>
+        <div id="keyboard-buttons">
+            <div class="keyboard-button" id="clap">
+            <audio id="clap-sound">
+                <source src="./sounds/clap.wav" type="audio/wav">
+
+            </audio>
+            <button type="button" onclick="clapper()" >
+                <p>A</p>
+                <p>Clap</p>
+            </button>
+
+            </div>
+            <div class="keyboard-button" id="hihat">
+                    <audio id="hihat-sound">
+                            <source src="./sounds/hihat.wav" type="audio/wav">
+            
+                        </audio>
+                <button type="button" onclick="hihatter()">
+                    <p>S</p>
+                    <p>Hihat</p>
+                </button>
+                
+                </div>
+                <div class="keyboard-button" id="kick">
+                        <audio id="kick-sound">
+                                <source src="./sounds/kick.wav" type="audio/wav">
+                
+                            </audio>
+                    <button type="button" onclick="kicker()">
+                        <p>D</p>
+                        <p>Kick</p>
+                    </button>
+                
+                    </div>
+                    <div class="keyboard-button" id="openhat">
+                            <audio id="openhat-sound">
+                                    <source src="./sounds/openhat.wav" type="audio/wav">
+                    
+                                </audio>
+                        <button type="button" onclick="openhatter()">
+                            <p>F</p>
+                            <p>Openhat</p>
+                        </button>
+                
+                        </div>
+                        <div class="keyboard-button" id="boom">
+                                <audio id="boom-sound">
+                                        <source src="./sounds/boom.wav" type="audio/wav">
+                        
+                                    </audio>
+                            <button type="button" onclick="boomer()">
+                                <p>G</p>
+                                <p>Boom</p>
+                            </button>
+                
+                            </div>
+                            <div class="keyboard-button" id="ride">
+                                    <audio id="ride-sound">
+                                            <source src="./sounds/ride.wav" type="audio/wav">
+                            
+                                        </audio>
+                                <button type="button" onclick="rider()">
+                                    <p>H</p>
+                                    <p>Ride</p>
+                                </button>
+                
+                                </div>
+                                <div class="keyboard-button" id="snare">
+                                        <audio id="snare-sound">
+                                                <source src="./sounds/snare.wav" type="audio/wav">
+                                
+                                            </audio>
+                                    <button type="button" onclick="snarer()">
+                                        <p>J</p>
+                                        <p>Snare</p>
+                                    </button>
+                
+                                    </div>
+                                    <div class="keyboard-button" id="tom">
+                                            <audio id="tom-sound">
+                                                    <source src="./sounds/tom.wav" type="audio/wav">
+                                    
+                                                </audio>
+                                        <button type="button" onclick="tommer()">
+                                            <p>K</p>
+                                            <p>Tom</p>
+                                        </button>
+                            
+                                        </div>
+                                        <div class="keyboard-button" id="tink">
+                                                <audio id="tink-sound">
+                                                        <source src="./sounds/tink.wav" type="audio/wav">
+                                        
+                                                    </audio>
+                                            <button type="button" onclick="tinker()">
+                                                <p>L</p>
+                                                <p>Tink</p>
+                                            </button>
+
+                            
+                                            </div>
+
+        </div>
+
+    </div>
+
+    <script src="./index.js"></script>
 </body>
 </html>
